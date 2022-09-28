@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:tileMode="repeat"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:layout_width="624dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="328dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="328dp"
+            android:fontFamily="@font/regular"
+            android:lineSpacingExtra="31px"
+            android:text="肥东县可回收垃圾智能化回收"
+            android:textColor="#FF0558E4"
+            android:textSize="52dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="1151dp"
+            android:layout_height="4dp"
+            android:background="#0554DE"
+            android:layout_marginLeft="64.5dp"
+            android:layout_marginRight="64.5dp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/type_food"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="380dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rectangle3x_1"
+            android:radius="1375dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/regular"
+            android:text="厨     余"
+            android:textColor="@color/white"
+            android:textSize="58dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/type_non_recyclab"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="640dp"
+            android:layout_marginRight="380dp"
+            android:background="@drawable/rectangle3x_2"
+            android:radius="1375dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="645dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/regular"
+            android:text="不可回收"
+            android:textColor="@color/white"
+            android:textSize="58dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/type_recyclab"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="380dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rectangle3x_2"
+            android:radius="1375dp"
+            android:shape="rectangle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/regular"
+            android:text="可 回 收"
+            android:textColor="@color/white"
+            android:textSize="58dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/others"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="640dp"
+            android:layout_marginRight="380dp"
+            android:background="@drawable/rectangle3x_1"
+            android:radius="1375dp"
+            android:shape="rectangle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="660dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/regular"
+            android:text="其     它"
+            android:textColor="@color/white"
+            android:textSize="58dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="1151dp"
+            android:layout_height="4dp"
+            android:background="@color/white"
+            android:layout_marginLeft="64.5dp"
+            android:layout_marginRight="64.5dp"
+            android:layout_marginTop="270dp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="80dp"
+            android:background="@drawable/group3x"
+            android:layout_marginLeft="160dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            android:text="技术支持：合肥中科慧晨科技有限公司 0551-62885908"
+            android:fontFamily="@font/regular"
+            android:lineSpacingExtra="20px"
+            android:shadowDx="0"
+            android:shadowDy="10"
+            android:shadowRadius="6"
+            android:shadowColor="#FF0558E4"
+            android:textStyle="bold"
+            android:textColor="#FFFFFFFF"
+            android:textSize="28sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

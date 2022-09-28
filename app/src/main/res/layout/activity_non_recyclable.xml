@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_2"
+    android:orientation="vertical"
+    tools:context=".NonRecyclableActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/head"
+        android:orientation="vertical">
+
+        <com.hjq.bar.TitleBar
+            android:id="@+id/type_non_recyclab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_gradient"
+            app:lineColor="@color/black"
+            android:contextClickable="false"
+            app:barStyle="transparent"
+            app:leftIcon="@drawable/goback"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:leftBackground="@null"
+            app:leftTitle="返回"
+            android:drawablePadding="15dp"
+            app:leftSize="40dp"
+            app:rightBackground="@null"
+            app:rightTitle="提交"
+            app:rightSize="40dp"
+            app:title="仿QQ渐变样式"
+            app:titleSize="50dp"
+            app:titleColor="@null" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="245dp"
+            android:layout_marginLeft="65dp"
+            android:background="@drawable/user">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/usericon" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/regular"
+                android:text="姓名: 周杰伦"
+                android:textColor="@color/black"
+                android:textSize="29dp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="90dp"
+                android:fontFamily="@font/regular"
+                android:text="单元: 25栋24019室"
+                android:textColor="@color/black"
+                android:textSize="29dp" />
+
+            <ImageView
+                android:layout_width="1400dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginRight="40dp"
+                android:background="#00B2FF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="190dp"
+                android:fontFamily="@font/regular"
+                android:text="当前剩余积分：250 点"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="35dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:text="当前重量："
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:text="400"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:text="是否合格："
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <org.angmarch.views.NiceSpinner
+                    android:id="@+id/qualified"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    app:popupTextAlignment="center"
+                    app:textTint="@color/black"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/regular"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="35dp">
+
+                <Button
+                    android:id="@+id/bt_takeImg"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/regular"
+                    android:text="拍摄照片"
+                    android:textColor="@color/black"
+                    android:textSize="24dp" />
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/regular"
+                    android:text="重新拍摄"
+                    android:textColor="@color/black"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp">
+
+            <ImageView
+                android:id="@+id/img_show"
+                android:layout_width="440dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/demo" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="180dp">
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="280dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:background="@drawable/group3x"-->
+        <!--            android:layout_marginLeft="440dp"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginLeft="500dp"
+            android:fontFamily="@font/regular"
+            android:shadowColor="#FF0558E4"
+            android:shadowDx="0"
+            android:shadowDy="10"
+            android:shadowRadius="6"
+            android:text="技术支持：合肥中科慧晨科技有限公司"
+            android:textColor="#FFFFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="560dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/regular"
+            android:shadowColor="#FF0558E4"
+            android:shadowDx="0"
+            android:shadowDy="10"
+            android:shadowRadius="6"
+            android:text="联系方式：0551-62885908"
+            android:textColor="#FFFFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

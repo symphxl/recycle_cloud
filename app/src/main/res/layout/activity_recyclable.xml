@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".RecyclableActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/head"
+        android:orientation="vertical">
+
+        <com.hjq.bar.TitleBar
+            android:id="@+id/type_recyclab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_gradient"
+            android:contextClickable="false"
+            android:drawablePadding="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:barStyle="transparent"
+            app:leftBackground="@null"
+            app:leftIcon="@drawable/goback"
+            app:leftSize="40dp"
+            app:leftTitle="返回"
+            app:lineColor="@color/black"
+            app:rightBackground="@null"
+            app:rightSize="40dp"
+            app:rightTitle="下一页"
+            app:rightIcon="@drawable/next"
+            app:title="仿QQ渐变样式"
+            app:titleColor="@null"
+            app:titleSize="50dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="740dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+        <!-- 内容页 -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="@style/TabLayoutStyle" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
